@@ -1,0 +1,22 @@
+const express = require('express');
+const app = express();
+
+app.get('/api/users', (req, res) => {
+    // Retorna uma lista de usuários
+});
+
+app.post('/api/users', (req, res) => {
+    // Cria um novo usuário
+});
+
+app.put('/api/users/:id', (req, res) => {
+    // Atualiza um usuário existente
+});
+
+app.delete('/api/users/:id', (req, res) => {
+    // Exclui um usuário existente
+});
+
+app.listen(3000, () => {
+    console.log('API rodando na porta 3000');
+});
